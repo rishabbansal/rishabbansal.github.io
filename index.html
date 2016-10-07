@@ -1,3 +1,6 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <style>
   @import url(http://fonts.googleapis.com/css?family=Roboto:400);
 
@@ -57,7 +60,205 @@ Background
 	box-shadow: inset 0 -20px 0 0 #87826e, inset 0 -21px 0 0 black, inset 0 -25px 0 0 #b4b4b6, inset 0 -26px 0 0 black, inset 0 -50px 0 0 #b4b4b6, inset 0 -51px 0 0 black;
 	z-index: 3;
 }
+/********************
+Sky
+********************/
 
+.sky {
+  height: 480px;
+  background: #007fd5;
+  position: relative;
+  overflow: hidden;
+  -webkit-animation: sky_background 50s ease-out infinite;
+  -moz-animation: sky_background 50s ease-out infinite;
+  -o-animation: sky_background 50s ease-out infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0)
+}
+
+.moon {
+  background: url("moon.png");
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: moon 50s linear infinite;
+  -moz-animation: moon 50s linear infinite;
+  -o-animation: moon 50s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0)
+}
+
+.clouds_one {
+  background: url("cloud_one.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_one 50s linear infinite;
+  -moz-animation: cloud_one 50s linear infinite;
+  -o-animation: cloud_one 50s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0)
+}
+
+.clouds_two {
+  background: url("cloud_two.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_two 75s linear infinite;
+  -moz-animation: cloud_two 75s linear infinite;
+  -o-animation: cloud_two 75s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0)
+}
+
+.clouds_three {
+  background: url("cloud_three.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_three 100s linear infinite;
+  -moz-animation: cloud_three 100s linear infinite;
+  -o-animation: cloud_three 100s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0)
+}
+
+@-webkit-keyframes sky_background {
+  0% {
+    background: #007fd5;
+    color: #007fd5
+  }
+  50% {
+    background: #000;
+    color: #a3d9ff
+  }
+  100% {
+    background: #007fd5;
+    color: #007fd5
+  }
+}
+
+@-webkit-keyframes moon {
+  0% {
+    opacity: 0;
+    left: -200% -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    -moz-transform: scale(1);
+    left: 0% bottom: 250px;
+    -webkit-transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    bottom: 500px;
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+}
+
+@-webkit-keyframes cloud_one {
+  0% {
+    left: 0
+  }
+  100% {
+    left: -200%
+  }
+}
+
+@-webkit-keyframes cloud_two {
+  0% {
+    left: 0
+  }
+  100% {
+    left: -200%
+  }
+}
+
+@-webkit-keyframes cloud_three {
+  0% {
+    left: 0
+  }
+  100% {
+    left: -200%
+  }
+}
+
+@-moz-keyframes sky_background {
+  0% {
+    background: #007fd5;
+    color: #007fd5
+  }
+  50% {
+    background: #000;
+    color: #a3d9ff
+  }
+  100% {
+    background: #007fd5;
+    color: #007fd5
+  }
+}
+
+@-moz-keyframes moon {
+  0% {
+    opacity: 0;
+    left: -200% -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    -moz-transform: scale(1);
+    left: 0% bottom: 250px;
+    -webkit-transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    bottom: 500px;
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+}
+
+@-moz-keyframes cloud_one {
+  0% {
+    left: 0
+  }
+  100% {
+    left: -200%
+  }
+}
+
+@-moz-keyframes cloud_two {
+  0% {
+    left: 0
+  }
+  100% {
+    left: -200%
+  }
+}
+
+@-moz-keyframes cloud_three {
+  0% {
+    left: 0
+  }
+  100% {
+    left: -200%
+  }
+}
 /********************
 Building
 ********************/
@@ -106,7 +307,6 @@ Door
 .door {
 	width: 80px;
 	height: 75px;
-	background: #b0d5c3;
 	left: 0;
 	right: 0;
 	bottom: 106px;
@@ -114,7 +314,7 @@ Door
 	border-bottom: 10px solid #e2722a;
 	border-left: 6px solid #e2722a;
 	border-right: 6px solid #e2722a;
-	box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black, 1px 0 0 0 black, -1px 0 0 0 black, 0 5px 0 0 #b4b4b6, 0 6px 0 0 black, 0 10px 0 0 #b4b4b6, 0 11px 0 0 black, 0 15px 0 0 #b4b4b6, 0 16px 0 0 black, 0 20px 0 0 #b4b4b6, 0 21px 0 0 black, 0 25px 0 0 #b4b4b6, 0 26px 0 0 black, inset 1px 0 0 0 black, inset -1px 0 0 0 black, inset 0 1px 0 0 black, inset 0 -1px 0 0 black, inset 34px 0 0 0 #b0d5c3, inset 35px 0 0 0 #e2722a, inset 36px 0 0 0 black, inset 38px 0 0 0 #e2722a, inset 39px 0 0 0 black, inset 42px 0 0 0 #e2722a, inset 43px 0 0 0 black, inset 45px 0 0 0 #e2722a, inset 46px 0 0 0 black, 0 -10px 0 0 #a683a1, 0 -11px 0 0 black, 0 -60px 0 0 #efad70, 0 -61px 0 0 black, 0 -125px 0 0 #efad70, 0 -126px 0 0 black, 0 -135px 0 0 #efad70, 0 -136px 0 0 black;
+	box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black, 1px 0 0 0 black, -1px 0 0 0 black, 0 5px 0 0 #b4b4b6, 0 6px 0 0 black, 0 10px 0 0 #b4b4b6, 0 11px 0 0 black, 0 15px 0 0 #b4b4b6, 0 16px 0 0 black, 0 20px 0 0 #b4b4b6, 0 21px 0 0 black, 0 25px 0 0 #b4b4b6, 0 26px 0 0 black, inset 1px 0 0 0 black, inset -1px 0 0 0 black, inset 0 1px 0 0 black, inset 0 -1px 0 0 black, inset 34px 0 0 0 #efad70, inset 35px 0 0 0 #e2722a, inset 36px 0 0 0 black, inset 38px 0 0 0 #e2722a, inset 39px 0 0 0 black, inset 42px 0 0 0 #e2722a, inset 43px 0 0 0 black, inset 45px 0 0 0 #e2722a, inset 46px 0 0 0 black, 0 -10px 0 0 #a683a1, 0 -11px 0 0 black, 0 -60px 0 0 #efad70, 0 -61px 0 0 black, 0 -125px 0 0 #efad70, 0 -126px 0 0 black, 0 -135px 0 0 #efad70, 0 -136px 0 0 black;
 }
 
 .door:before {
@@ -308,18 +508,19 @@ Window 1
 Sign, street etc
 ********************/
 .sign {
-	width: 80px;
+	width: 175px;
 	height: 40px;
 	background: #eac019;
 	left: 0;
 	right: 0;
-	top: 73px;
-	z-index: 2;
+	bottom: 331px;
+	z-index: 3;
 	border: 1px solid black;
 	border-radius: 5px;
 	text-align: center;
-	font-size: 9px;
-	line-height: 13px;
+	font-size: 14px;
+	line-height: 40px;
+	vertical-align: middle;
 }
 
 .street {
@@ -367,6 +568,14 @@ Sign, street etc
 	}
 }
 </style>
+</head>
+<body>
+<div class="sky">
+    <div class="moon"></div>
+    <div class="clouds_one"></div>
+    <div class="clouds_two"></div>
+    <div class="clouds_three"></div>
+</div>
 <div class="building abs">
   <div class="window w1 abs"></div>
   <div class="window w2 abs"></div>
@@ -388,13 +597,13 @@ Sign, street etc
   <div class="window w12 abs"></div>
   <div class="window w13 abs"></div>
   <div class="window w14 abs"></div>
-
-  <div class="sign abs">
-    Spring Dale<br>School<br>
-    Greater Noida
-  </div>
+</div>
+<div class="sign abs">
+    Spring Dale School
 </div>
 <div class="door abs"></div>
 <div class="bg abs"></div>
 <div class="midw abs"></div>
 <div class="street abs"></div> 
+</body>
+</html>
