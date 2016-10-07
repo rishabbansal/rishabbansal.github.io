@@ -1,4 +1,400 @@
-Welcome to Spring Dale School !
---------
+<style>
+  @import url(http://fonts.googleapis.com/css?family=Roboto:400);
 
-Email us at: contact@mysds.in
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+body {
+	background: #3e93ca;
+}
+
+.abs {
+	position: absolute;
+	margin: auto;
+}
+
+/********************
+List
+********************/
+ul {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	background: rgba(0, 0, 0, 0.2);
+	padding: 5px;
+}
+
+ul h2 span {
+	color: #fed41e;
+	font-weight: 500;
+}
+
+ul li a {
+	text-decoration: none;
+	color: #2ecc71;
+	cursor: pointer;
+}
+
+ul li a:hover {
+	color: #27ae60;
+}
+
+/********************
+Background
+********************/
+.bg {
+	width: 100%;
+	height: 80px;
+	background: #63ab86;
+	bottom: 0;
+	border-top: 1px solid black;
+	box-shadow: inset 0 -20px 0 0 #87826e, inset 0 -21px 0 0 black, inset 0 -25px 0 0 #b4b4b6, inset 0 -26px 0 0 black, inset 0 -50px 0 0 #b4b4b6, inset 0 -51px 0 0 black;
+	z-index: 3;
+}
+
+/********************
+Building
+********************/
+.building {
+	width: 500px;
+	height: 250px;
+	background: #efad70;
+	left: 0;
+	right: 0;
+	bottom: 80px;
+	border: 1px solid black;
+	box-shadow: inset 0 9px 0 0 #efad70, inset 0 10px 0 0 black, inset 0 109px 0 0 #efad70, inset 0 110px 0 0 black, inset 0 119px 0 0 #efad70, inset 0 120px 0 0 black;
+}
+
+.building:before {
+	content: '';
+	position: absolute;
+	margin: auto;
+	width: 260px;
+	height: 160px;
+	background: #efad70;
+	right: -262px;
+	bottom: -1px;
+	border: 1px solid black;
+	box-shadow: inset 0 9px 0 0 #efad70, inset 0 10px 0 0 black;
+	z-index: 1;
+}
+
+.building:after {
+	content: '';
+	position: absolute;
+	margin: auto;
+	width: 260px;
+	height: 160px;
+	background: #efad70;
+	left: -262px;
+	bottom: -1px;
+	border: 1px solid black;
+	box-shadow: inset 0 9px 0 0 #efad70, inset 0 10px 0 0 black;
+	z-index: 1;
+}
+
+/********************
+Door
+********************/
+.door {
+	width: 80px;
+	height: 75px;
+	background: #b0d5c3;
+	left: 0;
+	right: 0;
+	bottom: 106px;
+	border-top: 10px solid #e2722a;
+	border-bottom: 10px solid #e2722a;
+	border-left: 6px solid #e2722a;
+	border-right: 6px solid #e2722a;
+	box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black, 1px 0 0 0 black, -1px 0 0 0 black, 0 5px 0 0 #b4b4b6, 0 6px 0 0 black, 0 10px 0 0 #b4b4b6, 0 11px 0 0 black, 0 15px 0 0 #b4b4b6, 0 16px 0 0 black, 0 20px 0 0 #b4b4b6, 0 21px 0 0 black, 0 25px 0 0 #b4b4b6, 0 26px 0 0 black, inset 1px 0 0 0 black, inset -1px 0 0 0 black, inset 0 1px 0 0 black, inset 0 -1px 0 0 black, inset 34px 0 0 0 #b0d5c3, inset 35px 0 0 0 #e2722a, inset 36px 0 0 0 black, inset 38px 0 0 0 #e2722a, inset 39px 0 0 0 black, inset 42px 0 0 0 #e2722a, inset 43px 0 0 0 black, inset 45px 0 0 0 #e2722a, inset 46px 0 0 0 black, 0 -10px 0 0 #a683a1, 0 -11px 0 0 black, 0 -60px 0 0 #efad70, 0 -61px 0 0 black, 0 -125px 0 0 #efad70, 0 -126px 0 0 black, 0 -135px 0 0 #efad70, 0 -136px 0 0 black;
+}
+
+.door:before {
+	content: '';
+	position: absolute;
+	margin: auto;
+	width: 5px;
+	height: 270px;
+	background: #a683a1;
+	border: 1px solid black;
+	left: -13px;
+	top: -161px;
+	z-index: 2;
+	box-shadow: -6px 7px 0 0 #a683a1, -7px 6px 0 0 black, -13px 14px 0 0 #a683a1, -14px 13px 0 0 black, -200px 14px 0 0 #a683a1, -201px 13px 0 0 black, -199px 13px 0 0 black;
+}
+
+.door:after {
+	content: '';
+	position: absolute;
+	margin: auto;
+	width: 5px;
+	height: 270px;
+	background: #a683a1;
+	border: 1px solid black;
+	right: -13px;
+	top: -161px;
+	z-index: 2;
+	box-shadow: 6px 7px 0 0 #a683a1, 7px 6px 0 0 black, 13px 14px 0 0 #a683a1, 14px 13px 0 0 black, 200px 14px 0 0 #a683a1, 201px 13px 0 0 black, 199px 13px 0 0 black;
+}
+
+/********************
+Middle Window
+********************/
+.midw {
+	width: 60px;
+	height: 50px;
+	background: #b0d5c3;
+	left: 0;
+	right: 0;
+	bottom: 262px;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	border: 4px solid #a683a1;
+	box-shadow: 1px 0 0 0 black, -1px 0 0 0 black, 0 -1px 0 0 black, inset 1px 0 0 0 black, inset -1px 0 0 0 black, inset 0 -1px 0 0 black, inset 0 1px 0 0 black;
+}
+
+.midw:before {
+	content: '';
+	position: absolute;
+	margin: auto;
+	width: 30px;
+	height: 30px;
+	background: #b0d5c3;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	border-top: 4px solid #a683a1;
+	border-left: 4px solid #a683a1;
+	border-right: 4px solid #a683a1;
+	box-shadow: 1px 0 0 0 black, -1px 0 0 0 black, 0 -1px 0 0 black, inset 0 -1px 0 0 black, inset 1px 0 0 0 black, inset -1px 0 0 0 black, inset 0 1px 0 0 black;
+}
+
+.midw:after {
+	content: '';
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 5px;
+	height: 5px;
+	background: #a683a1;
+	box-shadow: 1px 0 0 0 black, -1px 0 0 0 black, 0 5px 0 0 #a683a1, 0 10px 0 0 #a683a1, 0 11px 0 0 #a683a1, 1px 5px 0 0 black, 1px 10px 0 0 black, -1px 5px 0 0 black, -1px 10px 0 0 black, -27px 30px 0 0 #a683a1, -22px 30px 0 0 #a683a1, -20px 30px 0 0 #a683a1, -26px 29px 0 0 black, -21px 29px 0 0 black, -26px 31px 0 0 black, -21px 31px 0 0 black, 28px 30px 0 0 #a683a1, 23px 30px 0 0 #a683a1, 20px 30px 0 0 #a683a1, 27px 29px 0 0 black, 22px 29px 0 0 black, 27px 31px 0 0 black, 22px 31px 0 0 black;
+}
+
+/********************
+Window 1
+********************/
+.window {
+	width: 55px;
+	height: 45px;
+	background: #b0d5c3;
+	border: 3px solid #a683a1;
+	box-shadow: inset 0 1px 0 0 black, inset 0 -1px 0 0 black, inset 1px 0 0 0 black, inset -1px 0 0 0 black, 1px 0 0 0 black, -1px 0 0 0 black, 0 1px 0 0 black, 0 -1px 0 0  black;
+}
+
+.window:before {
+	content: '';
+	position: absolute;
+	margin: auto;
+	top: 20px;
+	width: 100%;
+	height: 3px;
+	background: #a683a1;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	box-shadow: -7px 29px 0 0 #a683a1, 7px 29px 0 0 #a683a1, -8px 28px 0 0 black, -8px 30px 0 0 black, 8px 28px 0 0 black, 8px 30px 0 0 black;
+}
+
+.window:after {
+	content: '';
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	width: 3px;
+	height: 21px;
+	background: #a683a1;
+	box-shadow: 1px 0 0 0 black, -1px 0 0 0 black, 0 24px 0 0 #a683a1, 1px 24px 0 0 black, -1px 24px 0 0 black, 15px 0 0 0 #a683a1, 16px 0 0 0 black, 14px 0 0 0 black, -15px 0 0 0 #a683a1, -16px 0 0 0 black, -14px 0 0 0 black;
+}
+
+.w1 {
+	left: 20px;
+	top: 32px;
+}
+
+.w2 {
+	left: 102px;
+	top: 32px;
+}
+
+.w3 {
+	left: 20px;
+	top: 155px;
+}
+
+.w4 {
+	left: 102px;
+	top: 155px;
+}
+
+.w5 {
+	right: 20px;
+	top: 32px;
+}
+
+.w6 {
+	right: 102px;
+	top: 32px;
+}
+
+.w7 {
+	right: 20px;
+	top: 155px;
+}
+
+.w8 {
+	right: 102px;
+	top: 155px;
+}
+
+.w9 {
+	left: -80px;
+	top: 145px;
+	z-index: 2;
+}
+
+.w10 {
+	left: -162px;
+	top: 145px;
+	z-index: 2;
+}
+
+.w11 {
+	left: -244px;
+	top: 145px;
+	z-index: 2;
+}
+
+.w12 {
+	right: -80px;
+	top: 145px;
+	z-index: 2;
+}
+
+.w13 {
+	right: -162px;
+	top: 145px;
+	z-index: 2;
+}
+
+.w14 {
+	right: -244px;
+	top: 145px;
+	z-index: 2;
+}
+
+/********************
+Sign, street etc
+********************/
+.sign {
+	width: 80px;
+	height: 40px;
+	background: #eac019;
+	left: 0;
+	right: 0;
+	top: 73px;
+	z-index: 2;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 9px;
+	line-height: 13px;
+}
+
+.street {
+	left: 0;
+	right: 0;
+	bottom: 50px;
+	z-index: 4;
+	border-bottom: 30px solid black;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	height: 0;
+	width: 94px;
+}
+
+.street:before {
+	content: '';
+	position: absolute;
+	margin: auto;
+	z-index: 4;
+	border-bottom: 30px solid #b4b4b6;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	height: 0;
+	width: 92px;
+	left: -29px;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes fade {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+</style>
+<div class="building abs">
+  <div class="window w1 abs"></div>
+  <div class="window w2 abs"></div>
+
+  <div class="window w3 abs"></div>
+  <div class="window w4 abs"></div>
+
+  <div class="window w5 abs"></div>
+  <div class="window w6 abs"></div>
+
+  <div class="window w7 abs"></div>
+  <div class="window w8 abs"></div>
+
+
+  <div class="window w9 abs"></div>
+  <div class="window w10 abs"></div>
+  <div class="window w11 abs"></div>
+
+  <div class="window w12 abs"></div>
+  <div class="window w13 abs"></div>
+  <div class="window w14 abs"></div>
+
+  <div class="sign abs">
+    Spring Dale<br>School<br>
+    Greater Noida
+  </div>
+</div>
+<div class="door abs"></div>
+<div class="bg abs"></div>
+<div class="midw abs"></div>
+<div class="street abs"></div> 
