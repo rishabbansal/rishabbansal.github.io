@@ -4,26 +4,26 @@
 # Site settings
 title: bansal's sons School
 email: contact@mysds.in
-description: "Official Website of Spring Dale School"
+description: "Official Website of bansal sons School"
 
 
 # Team names, titles and social links
 people:
-- name: Sh. Nem Chand Jain
+- name: Rishab bansal
   pic: 1
   position: Chairman
   social:
     - title: facebook
-      url: https://www.facebook.com/profile.php?id=100009702091351
+     # url: https://www.facebook.com/profile.php?id=100009702091351
 
-- name: Sh. Rakesh Jain
+- name: R.K.Bansal
   pic: 2
   position: Director
   social:
     - title: facebook
-      url: https://www.facebook.com/rjain1806?
+      #url: https://www.facebook.com/rjain1806?
 
-- name: Smt. Renu Jain
+- name: DR.R.Bansal
   pic: 3
   position: Principal
   social:
@@ -31,14 +31,14 @@ people:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: https://twitter.com/schoolsds
+    #url: https://twitter.com/schoolsds
   - title: facebook
-    url: https://www.facebook.com/sdsgzb/
+    #url: https://www.facebook.com/sdsgzb/
     
 # Postal address (add as many lines as necessary)
 address:
-  - line: 2, Gautam Nagar
-  - line: Meerut Road, Ghaziabad
+  - line: 2, Laksar
+  - line: Haridwar
 
 # Build settings
 markdown: kramdown
